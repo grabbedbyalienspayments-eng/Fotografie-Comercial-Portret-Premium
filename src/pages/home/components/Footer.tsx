@@ -33,7 +33,7 @@ export default function Footer() {
                 <i className="ri-behance-line text-lg"></i>
               </a>
               <a
-                href="https://wa.me/40123456789"
+                href="https://wa.me/40000000000"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-[#1A1A1D] rounded-lg flex items-center justify-center text-[#C4C4C4] hover:text-[#7DF9FF] hover:bg-[#7DF9FF]/10 transition-all duration-300"
@@ -76,7 +76,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="text-[#C4C4C4]">
                 <i className="ri-phone-line mr-2"></i>
-                +40 123 456 789
+                +40 000 000 000
               </li>
               <li className="text-[#C4C4C4]">
                 <i className="ri-mail-line mr-2"></i>
