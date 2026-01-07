@@ -71,6 +71,20 @@ export default function Contact() {
     setTimeout(() => ripple.remove(), 600);
   };
 
+  const scrollToPortfolio = () => {
+    const element = document.getElementById('portfolio');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToServices = () => {
+    const element = document.getElementById('services');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-[#0B0B0D] to-[#1A1A1D] relative overflow-hidden">
       {/* Background Effects */}
@@ -189,7 +203,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">Telefon</h4>
-                    <p className="text-[#C4C4C4]">+40 123 456 789</p>
+                    <p className="text-[#C4C4C4]">070 000 000</p>
                   </div>
                 </div>
 
@@ -199,7 +213,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">Email</h4>
-                    <p className="text-[#C4C4C4]">hello@framecraft.ro</p>
+                    <p className="text-[#C4C4C4]">hello@helloframecraft.ro</p>
                   </div>
                 </div>
 
@@ -221,7 +235,7 @@ export default function Contact() {
               
               <div className="space-y-4">
                 <a
-                  href="https://wa.me/40123456789"
+                  href="https://wa.me/40700000000"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-3 text-[#C4C4C4] hover:text-[#7DF9FF] transition-colors duration-300"
@@ -230,25 +244,21 @@ export default function Contact() {
                   <span>WhatsApp</span>
                 </a>
                 
-                <a
-                  href="https://instagram.com/framecraftstudio"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-3 text-[#C4C4C4] hover:text-[#7DF9FF] transition-colors duration-300"
+                <button
+                  onClick={scrollToPortfolio}
+                  className="flex items-center space-x-3 text-[#C4C4C4] hover:text-[#7DF9FF] transition-colors duration-300 w-full text-left"
                 >
                   <i className="ri-instagram-line text-2xl"></i>
                   <span>Instagram</span>
-                </a>
+                </button>
                 
-                <a
-                  href="https://behance.net/framecraftstudio"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-3 text-[#C4C4C4] hover:text-[#7DF9FF] transition-colors duration-300"
+                <button
+                  onClick={scrollToServices}
+                  className="flex items-center space-x-3 text-[#C4C4C4] hover:text-[#7DF9FF] transition-colors duration-300 w-full text-left"
                 >
                   <i className="ri-behance-line text-2xl"></i>
                   <span>Behance</span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
